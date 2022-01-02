@@ -13,7 +13,7 @@ import sschr15.owolib.api.OwOTools;
 
 @Mixin(TitleScreen.class)
 public abstract class TitleScreenMixin extends Screen {
-    @Shadow private static @Final final Identifier EDITION_TITLE_TEXTURE = new Identifier("owolib", "textures/edition.png");
+    @Shadow private static @Final final Identifier field_15946 = new Identifier("owolib", "textures/edition.png");
     @Shadow private String splashText;
 
     @Inject(method = "init", at = @At("HEAD"))
@@ -22,6 +22,6 @@ public abstract class TitleScreenMixin extends Screen {
     }
 
     private TitleScreenMixin() {
-        super(null);
+        super();
     }
 }
